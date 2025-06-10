@@ -1,0 +1,183 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid ;
+    border-bottom-color:rgba(128, 128, 128, 0.215) ;
+    z-index: 100;
+}
+.left-section{
+    width: 250px;
+}
+.middle-section{
+    display: flex;
+    max-width: 600px;
+    flex: 1;
+}
+.right-section{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.hamburger-menu{
+    margin-left: 25px;
+    width: 25px;
+}
+.youtube-logo{
+    margin-left: 30px;
+    width: 100px;
+}
+.input-search{
+    width: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    flex: 1;
+    height: 35px;
+    font-family: Roboto,Arial;
+    border-color: rgba(128, 128, 128, 0.436);
+    border-width: 1px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.input-search::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+.search-icon{
+    width: 25px;
+}
+.search-button{
+    height: 39px;
+    border-radius: 2px;
+    border-color: rgba(128, 128, 128, 0.436);
+    padding-left: 15px;
+    border-width: 1px;
+    padding-right: 15px;
+    margin-left: -1px;
+    cursor: pointer;
+    position: relative;
+}
+.voice-search-icon{
+    width: 25px;
+}
+.voice-search-button{
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    border:none;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.215);
+    cursor: pointer;
+    position: relative;
+}
+.voice-search-button:active{
+    opacity: 0.8;
+}
+.upload{
+    width: 40px;
+    height: 30px;
+}
+.upload-button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.upload-button:active{
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+.youtube-apps{
+    width: 40px;
+    height: 30px;
+}
+.youtube-apps-button{
+    width: 45px;
+    height: 35px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.youtube-apps-button:active{
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+.notifications{
+    width: 40px;
+    height: 30px;
+}
+.notifications-button{
+    width: 45px;
+    height: 35px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+.notifications-button:active{
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+.notifications-no{
+    position: absolute;
+    background-color: rgb(222, 16, 16);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 10px;
+    border-radius: 10px;
+    color: white;
+    top: 2px;
+    right: 5px;
+}
+.my-channel{
+    width: 30px;
+    height: 30px;;
+}
+.my-channel-button{
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+}
+.my-channel-button:active{
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.053);
+}
+.search-button , .voice-search-button , .upload-button , .youtube-apps-button ,.notifications-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tool-tip , .voice-search-button .tool-tip,.upload-button .tool-tip,.youtube-apps-button .tool-tip,.notifications-button .tool-tip{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.632);
+    bottom: -40px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tool-tip,.voice-search-button:hover .tool-tip,.upload-button:hover .tool-tip,.youtube-apps-button:hover .tool-tip,.notifications-button:hover .tool-tip{
+    opacity: 1;
+}
+
